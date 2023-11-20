@@ -3,11 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville&family=Lilita+One&family=Lugrasimo&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Tilt+Prism&family=VT323&display=swap"
+        rel="stylesheet">
+            <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+              <script
+      src="https://kit.fontawesome.com/b2c9764323.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Weather App</title>
   </head>
+<body>
+ <div class="container">
+        <div class="weather-app-wrapper">
+        <div class="card main">
+            <form class="search-form">
+                <div class="row flex-row">
+                    <div class="col-6">
+                        <input type="search" placeholder="Enter a city..." id="city-type" class="enter-city">
+                    </div>
+                    <div class="col-3 search-input">
+                        <input type="submit" value="Search" class="btn-primary search-btn" id="search-btn">
+                            <input type="submit" value="Current" class="search-btn" id="current-btn">
+                        
+                    </div>
+                </div>
+            </form>
 
-  <body>
-    <h1>Hi</h1>
-    <footer>This page was coded by Anu Govender</footer>
+            <div class="row">
+                <div class="current-city col-6" mt-10>
+                    <img src="images/Location.png" alt="Location" class="location-tag">
+                    <span id="city" class="current-area">Durban, South Africa </span>
+                </div>
+
+                <div class="date col-6">
+                    <span id="date" class="current-day">Monday 13:30</span>
+                </div>
+
+            </div>
+            <div class="row current-details">
+                <div class="temperature col-9">
+                    <div class="current-temperature">
+                        <img src="./rename-weather_files/images/clear-sky-day.png" alt="clear skies" id="icon" class="image">
+                        <strong id="degrees" class="temp">22</strong>
+                        <span class="unit">
+                          <a href="#" id="celsius-link" class="active celsius">°C |</a>
+                            <a href="#" id="fahrenheit-link" class="fahrenheit">°F</a>
+                        </span>
+                    </div>
+                    <div class="feels-like">
+                        Feels like:
+                        <span id="estimated-temp">22</span>
+                        °C
+                    </div>
+                </div>
+                <div class="row prediction-value">
+                <div class="col-3 prediction">
+                     
+                        <span id="precipitation-value">Clear Skies</span>
+                    
+                    </div>
+                        <div class="col-3 prediction-humidity">
+                        <p>Humidity:
+                            <span id="humidity-value">14 %</span>
+                        </p>
+                        </div>
+                        <div class="col-3 prediction-wind">
+                        <p>Wind:
+                            <span id="wind-value">6 km/h</span>
+                        </p>
+                        </div>
+                   
+                </div>
+            </div>
+            <div class="weather-forecast" id="weather-forecast">
+            <div class="row card-row">
+                <div class="col-2">
+                    <h5 class="card-title">Tues</h5>
+                    <div class="card-weather">
+                        <div class="card-body">
+                            <p class="text-weather">
+                                <img src="images/clear-sky-day.png" alt="Clear Sky"
+                                    class="weather-image" width="33">
+                                <br>
+                            <div class="max-temp">23
+                                <span class="icon">°/</span>
+                                 
+                                <span class="min-temp"> 7
+                                    <span class="icon">°</span>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    <footer>
+      This project was coded by
+      <a href="https://github.com/1543-STACK/" target="_blank"> Anu Govender</a
+      >, is
+      <a href="https://github.com/1543-STACK/rename-weather" target="_blank"
+        >open-sourced on GitHub</a>
+      and
+      <a href="https://weather-meteor.netlify.app/#/" target="_blank"
+        >hosted on Netlify</a >
+    </footer>
+    <script src="src/app.js"></script>
   </body>
 </html>
