@@ -78,8 +78,7 @@ function displayForecast(response) {
 
 function getForecast(coordinates) {
   console.log(coordinates);
-  let key =
-    "https://main--tangerine-frangollo-9aa572.netlify.app/images/clear-sky-day.png";
+  let key = "https://weather-meteor.netlify.app/images/clear-sky-day.png";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${key}&units=metric`;
   console.log(apiUrl);
   console.log(apiUrl);
@@ -124,8 +123,8 @@ function getCity(event) {
   city.innerHTML = inputResult.value;
 
   let units = `metric`;
-  let apiKey =
-    "https://main--tangerine-frangollo-9aa572.netlify.app/images/clear-sky-day.png";
+  let apiKey = `3942at30b5e86c470ec01oad7babfcd0`;
+  ("https://weather-meteor.netlify.app/images/clear-sky-day.png");
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${inputResult.value}&key=${apiKey}&units=${units}`;
 
   axios.get(apiUrl).then(showTemperature);
