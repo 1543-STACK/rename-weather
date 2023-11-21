@@ -70,7 +70,8 @@ input:focus {
   border: white;
 }
 
-.search-btn {
+.search-btn,
+.btn-primary {
   border: 2px solid;
   box-shadow: #017ad3;
   color: floralwhite;
@@ -79,8 +80,8 @@ input:focus {
   margin-right: 20px;
   font-weight: 700;
   font-family: "Croissant One", cursive;
-  border-radius: 5px;
-  width: 240px;
+  border-radius: 12px;
+  width: 400px;
   transition: all 200ms ease-in-out;
   box-shadow: 10px 10px 5px 0px rgba(81, 51, 250, 0.18);
 }
@@ -90,14 +91,15 @@ input:focus {
   color: #afc6fc;
 }
 
-.current-btn {
-  border: 15px solid;
+.current-btn.btn-primary {
+  border: 5px solid;
+  border-color: antiquewhite;
   margin-right: 20px;
   margin-top: 10px;
   margin-left: -400px;
   font-weight: 700;
   font-family: "Croissant One", cursive;
-  width: 250px;
+  width: 400px;
   transition: all 200ms ease-in-out;
   border-radius: 5px;
 }
@@ -131,7 +133,7 @@ input:focus {
   width: 200px;
   text-align: center;
   color: white;
-  opacity: 0.9;
+
   font-size: 14px;
 }
 
@@ -148,7 +150,6 @@ input:focus {
   font-weight: bolder;
   font-size: 20px;
   margin: 0 auto;
-  margin-top: 10px;
 }
 
 .current-details {
