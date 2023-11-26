@@ -162,7 +162,7 @@ function getCurrentCity(response) {
 }
 
 function retrievePosition(position) {
-  let apiKey = "https://weather-meteor.netlify.app/images/clear-sky-day.png";
+  let apiKey = "3942at30b5e86c470ec01oad7babfcd0";
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
   let url = `https://api.shecodes.io/weather/v1/current?lon=${lon}&lat=${lat}&key=${apiKey}`;
